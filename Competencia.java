@@ -1,12 +1,10 @@
 public class Competencia {
     String nombre;
     int edad;
-    private int nvCreatividad;
 
-    public Competencia(String nombre, int edad, int nvCreatividad){
+    public Competencia(String nombre, int edad){
         this.nombre = nombre;
-        this.edad = edad;
-        this.nvCreatividad = nvCreatividad; 
+        this.edad = edad; 
     }
 
     public String getNombre(){
@@ -26,20 +24,11 @@ public class Competencia {
         this.edad = edad;
     }
 
-    public int getNvCreatividad(){
-        return nvCreatividad;
-    }
-
-    public void setNvCreatividad(int nvCreatividad){
-        this.nvCreatividad = nvCreatividad;
-    }
-
-
+    
     public void informacionPart(){
         System.out.println("---------------------Informacion de los participantes----------------------");
         System.out.println("Nombre del participante:  " + nombre );
         System.out.println("Edad del participante: " + edad);
-        System.out.println("nivel de creatividad: " + nvCreatividad);
         System.out.println("-------------------------------------------------------------");
     }
 }

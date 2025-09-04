@@ -2,8 +2,8 @@ import java.util.Scanner;
 public class Competidor extends Competencia{
     private String invento;
 
-    public Competidor(String nombre, int edad, int nvCreatividad, String invento){
-        super(nombre, edad, nvCreatividad);
+    public Competidor(String nombre, int edad, String invento){
+        super(nombre, edad);
         this.invento = invento;
 
     }
@@ -11,11 +11,13 @@ public class Competidor extends Competencia{
     public void crearInvento(){
         Scanner scam = new Scanner(System.in);
 
+
+        System.out.println("tu invento es ?? ");
         String invento;
-        System.out.println("tu invento es: ");
+        System.out.println("mi invento es: ");
         invento = scam.nextLine();
 
-        System.out.println("mi invento es: " + invento);
+        
         
     }
 
